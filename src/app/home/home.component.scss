@@ -1,0 +1,13 @@
+@import "../app.component.scss";
+
+.container {
+    width: 1140px;
+    display: block;
+    margin: auto;
+    min-height: calc(100vh - 163px);
+    h1 {
+        font-family: $fonte-secundaria;
+        font-size: $extra-grande;
+        color: $cor-principal;
+    }
+}
