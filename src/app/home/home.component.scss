@@ -11,6 +11,17 @@
         color: $cor-principal;
     }
     mat-grid-tile {
-        background: lightblue;
+        mat-card {
+            background-color: $branco;
+            margin: 10px;
+            box-shadow: $card-shadow;
+            transition: $card-transition;
+            &:hover {
+                box-shadow: $card-shadow-hover;
+            }
+            img {
+                width: 100%;
+            }
+        }
     }
 }
