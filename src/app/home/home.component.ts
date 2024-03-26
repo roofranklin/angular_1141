@@ -12,5 +12,12 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  // DATA BINDING
+  public nome = 'Roosevelt';
+  public sobrenome = 'Santos';
+  public titulo = 'Imobiliaria 1141';
 
+  public getNomeCompleto() {
+    return this.nome + ' ' + this.sobrenome;
+  }
 }
