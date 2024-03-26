@@ -24,4 +24,7 @@
         <button mat-button (click)="onSubmitForm()">Enviar</button>
         <p>{{ formMessage }}</p>
     </form>      
+    <!-- 2WAY DATA BINDING -->
+    <input [(ngModel)]="teste2WayBinding" />
+    <p>{{ teste2WayBinding }}</p>
 </div>
