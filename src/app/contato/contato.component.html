@@ -1,1 +1,27 @@
-<p>contato works!</p>
+<div class="container">
+    <h1>Fale Conosco</h1>
+    <p>Preencha o formulário abaixo para nos enviar uma mensagem.</p>
+    <form>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>E-mail</mat-label>
+            <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Selecione o assunto</mat-label>
+            <mat-select>
+                <mat-option value="compra">Tenho interesse em um imóvel</mat-option>
+                <mat-option value="suporte">Quero fazer uma reclamação</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Mensagem</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <button mat-button (click)="onSubmitForm()">Enviar</button>
+        <p>{{ formMessage }}</p>
+    </form>      
+</div>
