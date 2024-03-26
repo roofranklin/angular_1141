@@ -1,10 +1,9 @@
 <div class="container">
-    <h1>Olá {{ getNomeCompleto() }}!</h1>
-    <p>Bem vindo ao site da {{ titulo }}</p>
+    <h1>Olá {{ getNomeCompleto() }}! Bem vindo ao site da {{ titulo }}</h1>
     <mat-grid-list cols="3" rowHeight="3:4">
         <mat-grid-tile>
             <mat-card class="example-card">
-                <img mat-card-image src="https://pictures.escapia.com/HARDRE/202545/4003810267.jpg" alt="Foto Casa Magnífica" />
+                <img mat-card-image [src]="imgUrl" alt="Foto Casa Magnífica" />
                 <mat-card-content>
                   <h2>Casa Magnífica</h2>
                   <ul>

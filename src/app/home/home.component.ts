@@ -16,8 +16,10 @@ export class HomeComponent {
   public nome = 'Roosevelt';
   public sobrenome = 'Santos';
   public titulo = 'Imobiliaria 1141';
-
   public getNomeCompleto() {
     return this.nome + ' ' + this.sobrenome;
   }
+
+  // PROPERTY BINDING
+  public imgUrl = 'https://pictures.escapia.com/HARDRE/202545/4003810267.jpg';
 }
